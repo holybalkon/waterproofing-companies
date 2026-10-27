@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#0c8ce9" opacity="0.1"/>
+  
+  <!-- Water droplet shape -->
+  <g transform="translate(32, 32)">
+    <!-- Main droplet -->
+    <path d="M 0 -12 C -6 -5 -10 2 -10 8 C -10 14 -5 20 0 22 C 5 20 10 14 10 8 C 10 2 6 -5 0 -12 Z" 
+          fill="#0c8ce9" 
+          stroke="#0a6fba" 
+          stroke-width="1.5"/>
+    
+    <!-- Highlight on droplet for shine effect -->
+    <ellipse cx="-3" cy="-4" rx="2.5" ry="4" fill="white" opacity="0.4"/>
+  </g>
+  
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#0c8ce9" stroke-width="2"/>
+</svg>
