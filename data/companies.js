@@ -21,7 +21,7 @@ const companies = [
       { icon: 'uil-home', text: '50,000+ homes/projects (company-stated)' },
       { icon: 'uil-clock', text: '24/7 availability' }
     ],
-    description: 'Aquatech Waterproofing is a family-owned, Canadian-owned contractor operating in Toronto since 1996, with 25+ years of experience and a broad Ontario/GTA footprint. The company states 50,000+ homes and projects completed, and offers interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering. Its large, verified review footprint and award recognition are the standout differentiators.',
+    description: 'Aquatech Waterproofing is a family-owned, Canadian-owned contractor operating in Toronto since 1996, with over 30 years of experience and a broad Ontario/GTA footprint. The company states 50,000+ homes and projects completed, and offers interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering. Its large, verified review footprint and award recognition are the standout differentiators.',
     highlight: 'HomeStars 5/5 across 850+ reviews — one of the largest verified footprints in Toronto.*',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
@@ -35,7 +35,7 @@ const companies = [
     website: 'https://aquatechwaterproofing.ca/',
     profileInfo: {
       since: '1996',
-      warranty: '25-year transferable',
+      warranty: 'Lifetime transferable',
       service: 'Waterproofing, foundation repair',
       description: 'Established in 1996, Aquatech has built a reputation for reliability and quality in Toronto\'s waterproofing market. With a proven track record across 50,000+ projects, they combine modern techniques with traditional expertise.'
     }
