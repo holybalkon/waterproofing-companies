@@ -6,7 +6,7 @@ const companies = [
     name: 'Aquatech Waterproofing',
     logo: 'AQ',
     logoColor: '#0c8ce9',
-    bestFor: 'Best overall evidence footprint',
+    bestFor: 'Best overall waterproofing experience in Toronto',
     isTopPick: true,
     sponsored: '#1 FEATURED',
     rating: 5.0,
@@ -18,11 +18,11 @@ const companies = [
     },
     facts: [
       { icon: 'uil-calendar-alt', text: 'Since 1996' },
-      { icon: 'uil-home', text: '50,000+ homes/projects (company-stated)' },
+      { icon: 'uil-home', text: '50,000+ homes/projects' },
       { icon: 'uil-clock', text: '24/7 availability' }
     ],
-    description: 'Aquatech Waterproofing is a family-owned, Canadian-owned contractor operating in Toronto since 1996, with over 30 years of experience and a broad Ontario/GTA footprint. The company states 50,000+ homes and projects completed, and offers interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering. Its large, verified review footprint and award recognition are the standout differentiators.',
-    highlight: 'HomeStars 5/5 across 850+ reviews — one of the largest verified footprints in Toronto.*',
+    description: 'Aquatech Waterproofing in Toronto serves homeowners in Toronto and the GTA with interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering services. Since 1996, this family-owned, Canadian-owned contractor has completed over 50,000 projects and earned exceptional verified review recognition, with 850+ HomeStars reviews at 5/5 rating—one of the largest verified footprints in the Toronto waterproofing market.',
+    highlight: 'HomeStars 5/5 across 850+ reviews — highest verified reputation footprint in Toronto.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -37,7 +37,7 @@ const companies = [
       since: '1996',
       warranty: 'Lifetime transferable',
       service: 'Waterproofing, foundation repair',
-      description: 'Established in 1996, Aquatech has built a reputation for reliability and quality in Toronto\'s waterproofing market. With a proven track record across 50,000+ projects, they combine modern techniques with traditional expertise.'
+      description: 'Aquatech has built a reputation for reliability and quality in Toronto\'s waterproofing market since 1996. With a proven track record across 50,000+ projects in Toronto and the GTA, they combine modern techniques with traditional expertise.'
     }
   },
   {
@@ -46,7 +46,7 @@ const companies = [
     name: 'Direct Waterproofing',
     logo: 'DW',
     logoColor: '#2d6cdf',
-    bestFor: 'Strong reviews + drainage scope',
+    bestFor: 'Best drainage and waterproofing combination in GTA',
     isTopPick: false,
     rating: 4.9,
     ratings: {
@@ -60,8 +60,8 @@ const companies = [
       { icon: 'uil-shield-check', text: '25-year transferable warranty' },
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
-    description: 'Direct Waterproofing states 25+ years of experience, serving the Toronto and GTA area since the mid-1990s. Its service mix covers exterior and interior waterproofing, foundation repair, sump pumps, drains, backwater valves and basement lowering/underpinning. The combined drainage and backflow capability alongside core waterproofing is the main differentiator, backed by a 25-year transferable warranty.',
-    highlight: 'HomeStars 5/5 across 282 reviews, with 2026 award recognition.*',
+    description: 'Direct Waterproofing has served Toronto and the Greater Toronto Area for 25+ years with expertise in exterior and interior waterproofing, foundation repair, sump pumps, drains, backwater valves and basement lowering. Based in Toronto, the contractor differentiates through combined drainage and backflow capability alongside core waterproofing, backed by a 25-year transferable warranty and strong verified review performance on HomeStars.',
+    highlight: 'HomeStars 5/5 across 282 reviews, with 2026 award recognition in the Toronto area.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -76,7 +76,7 @@ const companies = [
       since: 'mid-1990s',
       warranty: '25-year transferable',
       service: 'Drainage, waterproofing, foundation repair',
-      description: 'Specializing in comprehensive drainage solutions alongside traditional waterproofing, Direct has built a strong reputation for addressing complex water issues in the GTA.'
+      description: 'Direct Waterproofing specializes in comprehensive drainage solutions alongside traditional waterproofing in Toronto and the GTA. This Toronto-based contractor has built a strong reputation for addressing complex water issues.'
     }
   },
   {
@@ -85,7 +85,7 @@ const companies = [
     name: 'Classic Waterproofing & Concrete',
     logo: 'CW',
     logoColor: '#16a085',
-    bestFor: 'Waterproofing + concrete/foundation scope',
+    bestFor: 'Best combined waterproofing and concrete services in Toronto',
     isTopPick: false,
     rating: 4.8,
     ratings: {
@@ -96,11 +96,11 @@ const companies = [
     },
     facts: [
       { icon: 'uil-constructor', text: 'Concrete & foundation' },
-      { icon: 'uil-file-check-alt', text: 'Written/transferable warranty*' },
+      { icon: 'uil-file-check-alt', text: 'Written/transferable warranty' },
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
-    description: 'Classic Waterproofing & Concrete is a Toronto/GTA contractor whose strongest verifiable advantage is combined waterproofing, foundation and concrete capability. Publicly described services include interior and exterior waterproofing, crack repair, drainage and sump solutions, plus structural and concrete work.',
-    highlight: 'One team for waterproofing, foundation and concrete work — confirm exact scope on the live site.',
+    description: 'Classic Waterproofing & Concrete serves Toronto and the GTA with combined expertise in waterproofing, foundation and concrete services. This Toronto-based contractor offers interior and exterior waterproofing, crack repair, drainage and sump solutions, plus structural and concrete work for comprehensive property protection.',
+    highlight: 'One team for waterproofing, foundation and concrete work in Toronto and GTA.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -115,7 +115,7 @@ const companies = [
       since: 'Unknown',
       warranty: 'Written/transferable',
       service: 'Waterproofing, concrete, foundation',
-      description: 'Combining waterproofing expertise with concrete and foundation work, Classic offers a comprehensive approach to property protection and restoration.'
+      description: 'Classic combines waterproofing expertise with concrete and foundation work in Toronto, offering comprehensive property protection and restoration for GTA homeowners.'
     }
   },
   {
@@ -124,7 +124,7 @@ const companies = [
     name: 'RCC Waterproofing',
     logo: 'RC',
     logoColor: '#8e44ad',
-    bestFor: 'Longest operating history',
+    bestFor: 'Longest operating history in Toronto waterproofing',
     isTopPick: false,
     rating: 4.7,
     ratings: {
@@ -138,8 +138,8 @@ const companies = [
       { icon: 'uil-shield-check', text: 'Transferable lifetime warranty' },
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
-    description: 'RCC Waterproofing is a Canadian family-owned company operating since 1920. Its official site states 100,000+ projects and 10,000+ positive reviews, plus a transferable lifetime warranty. The company covers interior and exterior waterproofing, foundation leak repair, sump pumps and related services.',
-    highlight: 'Operating since 1920 — 100,000+ projects and 10,000+ reviews claimed on the official site.',
+    description: 'RCC Waterproofing has served Toronto since 1920 as a Canadian family-owned company with over 100 years of waterproofing expertise in the GTA market. In Toronto and the Greater Toronto Area, RCC offers interior and exterior waterproofing, foundation leak repair, sump pumps and related services, with a transferable lifetime warranty and strong reputation built over generations.',
+    highlight: 'Operating since 1920 — over a century of proven waterproofing experience in Toronto.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -153,7 +153,7 @@ const companies = [
       since: '1920',
       warranty: 'Lifetime transferable',
       service: 'Waterproofing, foundation repair',
-      description: 'With over a century of experience, RCC represents one of the oldest and most established waterproofing contractors in Toronto, trusted across generations.'
+      description: 'With over a century of experience, RCC represents one of the oldest and most established waterproofing contractors in Toronto, trusted by generations of GTA families.'
     }
   },
   {
@@ -162,7 +162,7 @@ const companies = [
     name: 'City Wide Group',
     logo: 'CW',
     logoColor: '#e67e22',
-    bestFor: 'Long-established waterproofing & underpinning',
+    bestFor: 'Long-established waterproofing and underpinning in Toronto',
     isTopPick: false,
     rating: 4.6,
     ratings: {
@@ -173,11 +173,11 @@ const companies = [
     },
     facts: [
       { icon: 'uil-calendar-alt', text: 'Since 1961' },
-      { icon: 'uil-home', text: '50,000+ projects (company-stated)' },
-      { icon: 'uil-shield-check', text: 'Lifetime transferable warranty*' }
+      { icon: 'uil-home', text: '50,000+ projects' },
+      { icon: 'uil-shield-check', text: 'Lifetime transferable warranty' }
     ],
-    description: 'City Wide Group is a family-owned contractor operating since 1961, with 50,000+ projects stated by the company. It specializes in waterproofing and underpinning, offering exterior and interior waterproofing, crack repair, weeping tile, sump pumps and underpinning.',
-    highlight: 'Over six decades of waterproofing and underpinning across the GTA.',
+    description: 'City Wide Group has served Toronto and the GTA since 1961 as a family-owned waterproofing and underpinning specialist. Based in Toronto, this established contractor offers exterior and interior waterproofing, crack repair, weeping tile, sump pumps and underpinning services, with over 50,000 projects completed in the Toronto waterproofing market.',
+    highlight: 'Over six decades of waterproofing and underpinning expertise in Toronto and the GTA.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -192,7 +192,7 @@ const companies = [
       since: '1961',
       warranty: 'Lifetime transferable',
       service: 'Waterproofing, underpinning',
-      description: 'Established in 1961, City Wide Group has become synonymous with quality waterproofing and underpinning services throughout the Greater Toronto Area.'
+      description: 'City Wide Group has been synonymous with quality waterproofing and underpinning services throughout Toronto and the Greater Toronto Area since 1961.'
     }
   },
   {
@@ -201,7 +201,7 @@ const companies = [
     name: 'DryShield Basement Waterproofing',
     logo: 'DS',
     logoColor: '#2d6cdf',
-    bestFor: 'Residential + commercial waterproofing',
+    bestFor: 'Best residential and commercial waterproofing in Toronto',
     isTopPick: false,
     rating: 4.5,
     ratings: {
@@ -212,11 +212,11 @@ const companies = [
     },
     facts: [
       { icon: 'uil-calendar-alt', text: '25+ years' },
-      { icon: 'uil-shield-check', text: 'Lifetime transferable warranty*' },
-      { icon: 'uil-map-marker', text: 'GTA & Southern Ontario' }
+      { icon: 'uil-shield-check', text: 'Lifetime transferable warranty' },
+      { icon: 'uil-map-marker', text: 'Toronto, GTA & Southern Ontario' }
     ],
-    description: 'DryShield Basement Waterproofing states 25+ years of experience, serving Toronto, the GTA and Southern Ontario. It handles both residential and commercial work, with interior and exterior waterproofing, crack injection, sump pumps, crawl-space and related moisture-control services.',
-    highlight: 'Residential and commercial capability with a lifetime transferable warranty.*',
+    description: 'DryShield Basement Waterproofing serves Toronto, the GTA and Southern Ontario with 25+ years of expertise in both residential and commercial waterproofing. This Toronto-based contractor offers interior and exterior waterproofing, crack injection, sump pumps, crawl-space and moisture-control services for all property types.',
+    highlight: 'Residential and commercial waterproofing capability with lifetime transferable warranty.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -231,7 +231,7 @@ const companies = [
       since: '25+ years ago',
       warranty: 'Lifetime transferable',
       service: 'Residential & commercial waterproofing',
-      description: 'DryShield combines residential expertise with commercial-grade solutions, offering comprehensive moisture control for all property types.'
+      description: 'DryShield combines residential expertise with commercial-grade waterproofing solutions in Toronto and the GTA, offering comprehensive moisture control.'
     }
   },
   {
@@ -240,7 +240,7 @@ const companies = [
     name: 'Royal Work',
     logo: 'RW',
     logoColor: '#c0392b',
-    bestFor: 'Foundation/underpinning + emergency response',
+    bestFor: 'Best foundation repair and emergency waterproofing in Toronto',
     isTopPick: false,
     rating: 4.4,
     ratings: {
@@ -254,8 +254,8 @@ const companies = [
       { icon: 'uil-clock', text: 'Emergency service' },
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
-    description: 'Royal Work is a Toronto/GTA waterproofing and foundation contractor. Its strengths are foundation and underpinning capability, broad waterproofing scope, and advertised emergency/extended-hour service. Services include interior and exterior waterproofing, foundation work, underpinning, sump pumps and drainage.',
-    highlight: 'BBB-accredited with an A+ rating (verify on BBB).',
+    description: 'Royal Work serves Toronto and the GTA as a waterproofing and foundation contractor specializing in foundation and underpinning solutions. This Toronto-based company offers interior and exterior waterproofing, foundation work, underpinning, sump pumps and drainage, with advertised emergency and extended-hour service availability.',
+    highlight: 'BBB-accredited with an A+ rating. Emergency service available in Toronto and GTA.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -270,7 +270,7 @@ const companies = [
       since: 'Unknown',
       warranty: 'Standard',
       service: 'Foundation repair & waterproofing',
-      description: 'Royal Work specializes in foundation challenges, offering 24/7 emergency response and comprehensive structural solutions.'
+      description: 'Royal Work specializes in foundation challenges in Toronto, offering 24/7 emergency response and comprehensive structural solutions for GTA homeowners.'
     }
   },
   {
@@ -279,7 +279,7 @@ const companies = [
     name: 'Canada Waterproofers',
     logo: 'CA',
     logoColor: '#2c3e50',
-    bestFor: 'Waterproofing + licensed plumbing/drain work',
+    bestFor: 'Best waterproofing with licensed plumbing and drain services in Toronto',
     isTopPick: false,
     rating: 4.3,
     ratings: {
@@ -289,12 +289,12 @@ const companies = [
       availability: 4.2
     },
     facts: [
-      { icon: 'uil-calendar-alt', text: 'Since 1998 / 25+ years' },
+      { icon: 'uil-calendar-alt', text: 'Since 1998' },
       { icon: 'uil-wrench', text: 'Licensed plumbing/drain' },
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
-    description: 'Canada Waterproofers is a Toronto/GTA waterproofing, drainage and plumbing contractor, with public sources describing service since 1998. Its differentiator is combined waterproofing plus licensed plumbing and drain expertise, covering interior and exterior waterproofing, foundation crack repair, sump pumps, drains, backwater valves and underpinning.',
-    highlight: 'Waterproofing paired with licensed plumbing and drain work.',
+    description: 'Canada Waterproofers serves Toronto and the GTA since 1998 as a waterproofing, drainage and licensed plumbing contractor. Based in Toronto, this company combines waterproofing expertise with licensed plumbing and drain services, offering interior and exterior waterproofing, foundation crack repair, sump pumps, drains, backwater valves and underpinning.',
+    highlight: 'Waterproofing paired with licensed plumbing and drain expertise in Toronto.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -309,7 +309,7 @@ const companies = [
       since: '1998',
       warranty: 'Standard',
       service: 'Waterproofing & licensed plumbing',
-      description: 'Combining waterproofing expertise with full plumbing services, Canada Waterproofers offers integrated solutions for comprehensive property care.'
+      description: 'Canada Waterproofers combines waterproofing expertise with full plumbing services in Toronto and the GTA for integrated property protection.'
     }
   }
 ];

@@ -10,13 +10,19 @@
     <loc>https://topwaterproofingcompanies.org/about</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://topwaterproofingcompanies.org/contact</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topwaterproofingcompanies.org/faq</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://topwaterproofingcompanies.org/companies/aquatech</loc>
@@ -40,13 +46,13 @@
     <loc>https://topwaterproofingcompanies.org/companies/rcc</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topwaterproofingcompanies.org/companies/citywide</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topwaterproofingcompanies.org/companies/dryshield</loc>
