@@ -21,8 +21,8 @@ const companies = [
       { icon: 'uil-home', text: '50,000+ homes/projects' },
       { icon: 'uil-clock', text: '24/7 availability' }
     ],
-    description: 'Aquatech Waterproofing in Toronto serves homeowners in Toronto and the GTA with interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering services. Since 1996, this family-owned, Canadian-owned contractor has completed over 50,000 projects and earned exceptional verified review recognition, with 850+ HomeStars reviews at 5/5 rating—one of the largest verified footprints in the Toronto waterproofing market.',
-    highlight: 'HomeStars 5/5 across 850+ reviews — highest verified reputation footprint in Toronto.',
+    description: 'Aquatech Waterproofing is a Toronto waterproofing company in business since 1996, offering interior and exterior waterproofing, crack repair, sump pumps, drainage, underpinning and basement lowering. 912 reviews rated 5/5 on Google as of October 2026. Warranty and service details available on the company website. Aquatech serves Toronto and the GTA and offers quotes.',
+    highlight: 'Google 5/5 across 912 reviews.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -31,13 +31,13 @@ const companies = [
       { icon: 'uil-constructor', label: 'Underpinning' },
       { icon: 'uil-pathfinder', label: 'Drainage' }
     ],
-    platform: 'HomeStars: 5/5 with 850+ reviews and 2026 Best of Awards recognition. Re-check counts before launch.*',
+    platform: 'Google: 5/5 with 912 reviews as of October 2026. Re-check counts before launch.',
     website: 'https://aquatechwaterproofing.ca/',
     profileInfo: {
       since: '1996',
       warranty: 'Lifetime transferable',
       service: 'Waterproofing, foundation repair',
-      description: 'Aquatech has built a reputation for reliability and quality in Toronto\'s waterproofing market since 1996. With a proven track record across 50,000+ projects in Toronto and the GTA, they combine modern techniques with traditional expertise.'
+      description: 'Aquatech has built a reputation for reliability and quality in Toronto\'s waterproofing market since 1996. With [N]+ projects in Toronto and the GTA, they combine modern techniques with traditional expertise.',
     }
   },
   {
@@ -61,7 +61,7 @@ const companies = [
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
     description: 'Direct Waterproofing has served Toronto and the Greater Toronto Area for 25+ years with expertise in exterior and interior waterproofing, foundation repair, sump pumps, drains, backwater valves and basement lowering. Based in Toronto, the contractor differentiates through combined drainage and backflow capability alongside core waterproofing, backed by a 25-year transferable warranty and strong verified review performance on HomeStars.',
-    highlight: 'HomeStars 5/5 across 282 reviews, with 2026 award recognition in the Toronto area.',
+    highlight: 'Google 5/5 across 340 reviews in Toronto area.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
@@ -70,7 +70,7 @@ const companies = [
       { icon: 'uil-valve', label: 'Backwater Valve' },
       { icon: 'uil-constructor', label: 'Underpinning' }
     ],
-    platform: 'HomeStars: 5/5 with 282 reviews and 2026 Best of Awards recognition. Re-check counts before launch.*',
+    platform: 'Google: 5/5 with 340 reviews as of October 2026. Re-check counts before launch.',
     website: 'https://directwaterproofing.ca/',
     profileInfo: {
       since: 'mid-1990s',
@@ -139,7 +139,7 @@ const companies = [
       { icon: 'uil-map-marker', text: 'Toronto & GTA' }
     ],
     description: 'RCC Waterproofing has served Toronto since 1920 as a Canadian family-owned company with over 100 years of waterproofing expertise in the GTA market. In Toronto and the Greater Toronto Area, RCC offers interior and exterior waterproofing, foundation leak repair, sump pumps and related services, with a transferable lifetime warranty and strong reputation built over generations.',
-    highlight: 'Operating since 1920 — over a century of proven waterproofing experience in Toronto.',
+    highlight: 'Operating since 1920 - over a century of proven waterproofing experience in Toronto.',
     focusAreas: [
       { icon: 'uil-raindrops', label: 'Exterior' },
       { icon: 'uil-home', label: 'Interior' },
