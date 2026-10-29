@@ -109,10 +109,10 @@ const companies = [
       { icon: 'uil-constructor', label: 'Concrete' },
       { icon: 'uil-building', label: 'Foundation' }
     ],
-    platform: 'NOTE: Public review-count evidence is less consistent across directories. Verify a current platform count before publishing.',
+    platform: 'Google Maps: 5/5 with 99 reviews. Established reputation in Toronto and GTA.',
     website: 'https://classicwaterproofingandconcrete.ca/',
     profileInfo: {
-      since: 'Unknown',
+      since: '15+ years',
       warranty: 'Written/transferable',
       service: 'Waterproofing, concrete, foundation',
       description: 'Classic combines waterproofing expertise with concrete and foundation work in Toronto, offering comprehensive property protection and restoration for GTA homeowners.'

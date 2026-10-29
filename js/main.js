@@ -1,7 +1,173 @@
 // Main functionality
 document.addEventListener('DOMContentLoaded', () => {
+  renderCompanies();
   setupEventListeners();
 });
+
+function renderCompanies() {
+  const listingContainer = document.getElementById('company-list');
+  if (!listingContainer) return;
+
+  companies.forEach((company) => {
+    const cardHTML = createCardHTML(company);
+    listingContainer.insertAdjacentHTML('beforeend', cardHTML);
+  });
+
+  // Add promo after first company
+  const promoHTML = createPromoHTML();
+  const firstCard = listingContainer.querySelector('.card');
+  if (firstCard) {
+    firstCard.insertAdjacentHTML('afterend', promoHTML);
+  }
+
+  // Add event listeners to all cards
+  attachCardListeners();
+}
+
+function createCardHTML(company) {
+  const {
+    id,
+    rank,
+    name,
+    logo,
+    logoColor,
+    bestFor,
+    isTopPick,
+    sponsored,
+    rating,
+    ratings,
+    facts,
+    description,
+    highlight,
+    focusAreas,
+    platform,
+    website
+  } = company;
+
+  let ribbonHTML = '';
+
+  // Positions #1-#3 reflect project direction; the rest are competitors
+  const isOurCompany = rank <= 3;
+
+  if (isTopPick) {
+    const linkAttrs = isOurCompany
+      ? `href="${website}"`
+      : `href="${website}" target="_blank" rel="nofollow noopener noreferrer"`;
+
+    ribbonHTML = `
+      <div class="pick-ribbon">
+        <span class="pick-label"><i class="uil uil-trophy"></i> #1 PICK</span>
+        <span class="pick-fact">Best overall evidence footprint</span>
+        <span class="pick-fact">HomeStars 5/5 &middot; 850+ reviews*</span>
+        <span class="pick-fact">Serving Toronto since 1996</span>
+        <a class="visit" ${linkAttrs}>Visit site <i class="uil uil-arrow-up-right"></i></a>
+      </div>
+    `;
+  }
+
+  const starsHTML = (count) => {
+    let stars = '';
+    for (let i = 0; i < 5; i++) {
+      stars += i < Math.floor(count) ? '★' : '☆';
+    }
+    return stars;
+  };
+
+  const focusAreasHTML = focusAreas
+    .map(area => `
+      <span class="i">
+        <i class="uil ${area.icon}"></i>
+        <span class="lbl">${area.label}</span>
+      </span>
+    `)
+    .join('');
+
+  const sponsorLabel = sponsored ? `<div class="sponsored">${sponsored}</div>` : '';
+
+  // Visit site button
+  const visitLink = isOurCompany
+    ? `<a class="visit" href="${website}">Visit site <i class="uil uil-arrow-up-right"></i></a>`
+    : `<a class="visit" href="${website}" target="_blank" rel="nofollow noopener noreferrer">Visit site <i class="uil uil-arrow-up-right"></i></a>`;
+
+  return `
+    <article class="card ${isTopPick ? 'top-pick' : ''}" data-company="${id}" data-rating="${rating}">
+      ${ribbonHTML}
+      <div class="rank">${rank}</div>
+      <div class="card-head">
+        <div class="card-logo" style="background:${logoColor}">${logo}</div>
+        <div>
+          <div class="card-name">${name}</div>
+          <div class="best-for">Best for: <b>${bestFor}</b></div>
+        </div>
+        ${sponsorLabel}
+      </div>
+
+      <div class="card-body">
+        <div class="ratings">
+          <div class="overall">
+            <div>
+              <div class="label">Editorial Rating</div>
+              <div class="count">Our score — not a platform rating</div>
+            </div>
+            <div class="score">${rating.toFixed(1)}</div>
+          </div>
+          <div class="rrow">
+            <span>Reputation</span>
+            <span class="right">${ratings.reputation.toFixed(1)} <span class="stars">${starsHTML(ratings.reputation)}</span></span>
+          </div>
+          <div class="rrow">
+            <span>Service Breadth</span>
+            <span class="right">${ratings.breadth.toFixed(1)} <span class="stars">${starsHTML(ratings.breadth)}</span></span>
+          </div>
+          <div class="rrow">
+            <span>Warranty / Trust</span>
+            <span class="right">${ratings.warranty.toFixed(1)} <span class="stars">${starsHTML(ratings.warranty)}</span></span>
+          </div>
+          <div class="rrow">
+            <span>Availability</span>
+            <span class="right">${ratings.availability.toFixed(1)} <span class="stars">${starsHTML(ratings.availability)}</span></span>
+          </div>
+          <div class="platform">
+            <span class="tag">${platform.includes('HomeStars') ? 'LIVE PLATFORM' : platform.includes('BBB') ? 'LIVE PLATFORM' : 'NOTE'}</span><br>
+            ${platform}
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="facts">
+            ${facts.map(fact => `<span><i class="uil ${fact.icon}"></i> ${fact.text}</span>`).join('')}
+          </div>
+          <p>
+            ${description}
+            <span class="highlight"><i class="uil uil-award"></i> ${highlight}</span>
+            <a class="readmore">Read More</a>
+          </p>
+          <div class="ind-title">FOCUS AREAS</div>
+          <div class="inds">
+            ${focusAreasHTML}
+          </div>
+          <div class="actions">
+            <a class="link-btn" data-company="${id}">VIEW PROFILE</a>
+            ${visitLink}
+          </div>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function createPromoHTML() {
+  return `
+    <div class="promo">
+      <div class="icon"><i class="uil uil-raindrops"></i></div>
+      <div>
+        <h3>Get Connected With A Company For Free</h3>
+        <p>Tell us about your project, and we'll match you with vetted Toronto waterproofing companies that meet your requirements.</p>
+      </div>
+      <button class="btn-site" id="getStarted">GET STARTED</button>
+    </div>
+  `;
+}
 
 function setupEventListeners() {
   // Visit site links
@@ -26,6 +192,15 @@ function setupEventListeners() {
     if (e.target.matches('#getStarted')) {
       alert('Connect with our team to find the perfect waterproofing company for your project!');
     }
+
+    // Jump to list
+    if (e.target.matches('.jump')) {
+      e.preventDefault();
+      const listingElement = document.getElementById('company-list');
+      if (listingElement) {
+        listingElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   });
 
   // Read More links
@@ -39,14 +214,10 @@ function setupEventListeners() {
       }
     }
   });
+}
 
-  // Jump to list
-  document.addEventListener('click', (e) => {
-    if (e.target.matches('.jump')) {
-      e.preventDefault();
-      document.getElementById('company-list').scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+function attachCardListeners() {
+  // Event listeners attached via delegation in setupEventListeners
 }
 
 function openProfile(companyId) {
@@ -232,7 +403,7 @@ function createProfileHTML(company) {
 // Close profile when clicking outside
 document.addEventListener('click', (e) => {
   const overlay = document.getElementById('profileOverlay');
-  if (e.target === overlay) {
+  if (overlay && e.target === overlay) {
     closeProfile();
   }
 });
