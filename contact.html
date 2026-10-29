@@ -52,16 +52,13 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Aquatech Waterproofing",
-    "url": "https://aquatechwaterproofing.ca/",
-    "logo": "https://aquatechwaterproofing.ca/logo.png",
+    "@id": "https://topwaterproofingcompanies.org/#organization",
+    "name": "Top Waterproofing Companies",
+    "url": "https://topwaterproofingcompanies.org/",
+    "logo": "https://topwaterproofingcompanies.org/logo.png",
     "description": "Top Waterproofing Companies in Toronto – Editorial resource published by Aquatech Waterproofing.",
-    "areaServed": {
-      "@type": "City",
-      "name": "Toronto, Ontario"
-    },
-    "email": "info@aquatechwaterproofing.ca",
     "telephone": "+1-647-794-1701",
+    "email": "info@aquatechwaterproofing.ca",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "20 Hyde Ave",
@@ -69,6 +66,28 @@
       "addressRegion": "ON",
       "postalCode": "M6M 1J3",
       "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Toronto",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Ontario"
+      }
     }
   }
   </script>
